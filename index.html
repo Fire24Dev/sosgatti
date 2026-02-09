@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS Gatti | Aiutiamo i nostri amici a quattro zampe</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --red-gradient: linear-gradient(to right, #800000, #ff4b2b);
+            --dark-bg: #1a1a1a;
+            --light-text: #f4f4f4;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--light-text);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 1px solid #333;
+        }
+
+        /* Il tuo stile Small Caps con gradiente rosso */
+        .logo-sos {
+            font-size: 3rem;
+            font-weight: 900;
+            font-variant: small-caps;
+            background: var(--red-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 0;
+            letter-spacing: 3px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: #252525;
+            padding: 20px;
+            border-radius: 15px;
+            border-left: 5px solid #ff4b2b;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            font-variant: small-caps;
+            color: #ff4b2b;
+            margin-top: 0;
+        }
+
+        .btn-emergenza {
+            display: inline-block;
+            background: var(--red-gradient);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-variant: small-caps;
+            margin-top: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="logo-sos">sos gatti smarriti</h1>
+        <p>Non sei solo. La nostra comunità ti aiuta a riportarlo a casa.</p>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            
+            <div class="card">
+                <h2>ho perso un gatto</h2>
+                <p>Inserisci subito un annuncio con foto, zona e orario dell'ultimo avvistamento. La rapidità è fondamentale.</p>
+                <a href="mailto:sos.gatti.segnala@gmail.com" class="btn-emergenza">segnala smarrimento</a>
+            </div>
+
+            <div class="card">
+                <h2>ho trovato un gatto</h2>
+                <p>Hai visto un micio in difficoltà o che sembra essersi perso? Controlla se qualcuno lo sta cercando.</p>
+                <a href="annunci.html" class="btn-emergenza">cerca tra gli annunci</a>
+            </div>
+
+            <div class="card">
+                <h2>cosa fare subito?</h2>
+                <ul style="padding-left: 20px;">
+                    <p>Segui la guida di cosa fare nel caso tu trovi in gattino in difficoltà.</p>
+                    <a href="guida.html" class="btn-emergenza">leggi la guida</a>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2>adotta un gatto</h2>
+                <ul style="padding-left: 20px;">
+                    <p>Vuoi adottare un gatto con difficoltà o semplicemente abbandonato? Clicca qui sotto per salvare uno.</p>
+                    <a href="adozioni.html" class="btn-emergenza">adozioni</a>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2>prevenire smarrimenti</h2>
+                <ul style="padding-left: 20px;">
+                    <p>Leggi tutto quello da sapere per non smarrire il proprio gatto.</p>
+                    <a href="prevenzioni.html" class="btn-emergenza">non smarrire il tuo gatto</a>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 SOS Gatti - Segnala gatti smarriti per aiutarli.
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annunci Gatti Smarriti - SOS Gatti</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --red-gradient: linear-gradient(to right, #800000, #ff4b2b);
+            --dark-bg: #121212;
+            --card-bg: #1e1e1e;
+            --text-color: #ffffff;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .titolo-maiuscoletto {
+            font-variant: small-caps;
+            font-size: 3rem;
+            font-weight: 900;
+            background: var(--red-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        /* Griglia degli Annunci */
+        .griglia-annunci {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Stile della Card */
+        .card-gatto {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            overflow: hidden; /* Taglia l'immagine agli angoli arrotondati */
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease;
+            border: 1px solid #333;
+        }
+
+        .card-gatto:hover {
+            transform: translateY(-10px);
+            border-color: #ff4b2b;
+        }
+
+        .card-gatto img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover; /* Mantiene le proporzioni dell'immagine */
+            display: block;
+        }
+
+        .card-info {
+            padding: 20px;
+        }
+
+        .card-info h2 {
+            font-variant: small-caps;
+            margin: 0 0 10px 0;
+            color: #ff4b2b;
+            font-size: 1.5rem;
+        }
+
+        .card-info p {
+            font-size: 0.9rem;
+            color: #ccc;
+            margin-bottom: 15px;
+            height: 60px; /* Altezza fissa per allineare i bottoni */
+            overflow: hidden;
+        }
+
+        .info-dettaglio {
+            font-size: 0.8rem;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+            color: #aaa;
+        }
+
+        /* Bottone Contatto */
+        .btn-contatto {
+            display: block;
+            text-align: center;
+            background: var(--red-gradient);
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-variant: small-caps;
+            transition: opacity 0.3s;
+        }
+
+        .btn-contatto:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="titolo-maiuscoletto">gatti smarriti</h1>
+        <p>Aiutaci a riportarli a casa. Se hai visto uno di questi gatti, contatta subito i proprietari.</p>
+    </header>
+
+    <div class="griglia-annunci">
+
+        <div class="card-gatto">
+            <img src="https://placekitten.com/400/300" alt="Gatto smarrito">
+            <div class="card-info">
+                <h2>nessuno</h2>
+                <span class="info-dettaglio">📍 Zona: --</span>
+                <p>Descrizione.</p>
+                <a href="#" class="btn-contatto">contatta</a>
+            </div>
+
+    </div>
+
+    <footer style="text-align: center; margin-top: 50px; color: #555;">
+        <p>© 2026 SOS Gatti - Insieme per i nostri amici.</p>
+    </footer>
+
+</body>
+</html>
